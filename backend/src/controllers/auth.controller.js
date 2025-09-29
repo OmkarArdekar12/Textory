@@ -1,11 +1,11 @@
 export const signup = async (req, res) => {
-  res.send("done");
+  res.send("signup");
 };
 
 export const login = async (req, res) => {
-  res.send("done");
+  res.send("login");
 };
 
 export const logout = async (req, res) => {
-  res.send("done");
+  res.send("logout");
 };
