@@ -4,10 +4,10 @@ export const signup = async (req, res) => {
   } catch (error) {}
 };
 
-export const login = async (req, res) => {
+export const login = (req, res) => {
   res.send("login");
 };
 
-export const logout = async (req, res) => {
+export const logout = (req, res) => {
   res.send("logout");
 };
