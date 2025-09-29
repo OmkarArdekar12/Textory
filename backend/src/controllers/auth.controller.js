@@ -1,5 +1,7 @@
 export const signup = async (req, res) => {
-  res.send("signup");
+  try {
+    res.send("signup");
+  } catch (error) {}
 };
 
 export const login = async (req, res) => {
