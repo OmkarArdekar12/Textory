@@ -25,7 +25,11 @@ export const signup = async (req, res) => {
       password: hashedPassword,
     });
 
-    newUser.save();
+    if (newUser) {
+      //generate jwt token
+    } else {
+      res.status(400).json({ message: "Invalid User Data" });
+    }
   } catch (err) {}
 };
 
