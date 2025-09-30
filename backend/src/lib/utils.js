@@ -1,3 +1,3 @@
 import jwt from "jsonwebtoken";
 
-export const generateToken = () => {};
+export const generateToken = (userId, res) => {};
