@@ -97,7 +97,11 @@ export const updateProfile = async (req, res) => {
       return res.status(400).json({ message: "Profile Picture is Required" });
     }
 
-    const uploadResponse = await cloudinary.uploader.upload(profilePicture);
+    const uploadResponse = await cloudinary.uploader.upload(profilePicture, {
+      folder: "user_profiles", //folder name where image will be stored
+      public_id: userId, //set file name as userId
+      overwrite: true, //replace if same public_id exists - replace the previous image with current image
+    });
     const updatedUser = await User.findByIdAndUpdate(
       userId,
       {
