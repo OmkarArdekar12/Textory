@@ -98,7 +98,7 @@ export const updateProfile = async (req, res) => {
     }
 
     const uploadResponse = await cloudinary.uploader.upload(profilePicture, {
-      folder: "user_profiles", //folder name where image will be stored
+      folder: "Textory_Project", //folder name where image will be stored
       public_id: userId, //set file name as userId
       overwrite: true, //replace if same public_id exists - replace the previous image with current image
     });
