@@ -1,1 +1,1 @@
-# Textory - Messaging Application.
+# Textory - Chat Application.
