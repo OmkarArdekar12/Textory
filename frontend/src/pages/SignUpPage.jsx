@@ -58,8 +58,22 @@ const SignUpPage = () => {
           {/* logo */}
           <div className="text-center mb-8">
             <div className="flex flex-col items-center gap-2 group">
-              <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <MessageSquare className="size-6 text-primary" />
+              <div className="size-12 rounded-xl flex items-center justify-center transition-colors">
+                <div className="absolute flex items-center gap-1">
+                  <p
+                    className="rounded-full bg-white size-1 z-40 animate-bounce"
+                    style={{ animationDelay: "0s" }}
+                  ></p>
+                  <p
+                    className="rounded-full bg-white size-1 z-40 animate-bounce"
+                    style={{ animationDelay: "0.2s" }}
+                  ></p>
+                  <p
+                    className="rounded-full bg-white size-1 z-40 animate-bounce"
+                    style={{ animationDelay: "0.4s" }}
+                  ></p>
+                </div>
+                <img src="/Logo.png" alt="Textory" className="w-14 -z-40" />
               </div>
               <h1 className="text-2xl font-bold mt-2">Create Account</h1>
               <p className="text-base-content/60">

@@ -15,10 +15,36 @@ const Navbar = () => {
               to="/"
               className="flex items-center gap-2.5 hover:opacity-80 transition-all"
             >
-              <div className="size-9 rounded-lg bg-primary/10 flex items-center justify-center">
-                <MessageSquare className="w-5 h-5 text-primary" />
+              <div className="size-9 flex items-center justify-center">
+                <div className="absolute flex items-center gap-1">
+                  <p
+                    className="rounded-full bg-white size-1 z-40 animate-bounce-small"
+                    style={{
+                      animationDelay: "0s",
+                      animationDuration: "1s",
+                      animationIterationCount: "5",
+                    }}
+                  ></p>
+                  <p
+                    className="rounded-full bg-white size-1 z-40 animate-bounce-medium"
+                    style={{
+                      animationDelay: "0.1s",
+                      animationDuration: "1s",
+                      animationIterationCount: "5",
+                    }}
+                  ></p>
+                  <p
+                    className="rounded-full bg-white size-1 z-40 animate-bounce-large"
+                    style={{
+                      animationDelay: "0.2s",
+                      animationDuration: "1s",
+                      animationIterationCount: "5",
+                    }}
+                  ></p>
+                </div>
+                <img src="/Logo.png" alt="Textory" className="w-14 -z-40" />
               </div>
-              <h1 className="text-lg font-bold">Textory</h1>
+              <h1 className="text-lg font-bold tracking-widest">TEXTORY</h1>
             </Link>
           </div>
 
