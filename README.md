@@ -1,3 +1,3 @@
-# Textory
+# Textory - Chat Application
 
 ### Chat Application
