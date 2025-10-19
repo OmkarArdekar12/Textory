@@ -26,23 +26,19 @@ const LoginPage = () => {
               <div className="relative w-12 h-12 rounded-xl flex items-center justify-center transition-colors">
                 <div className="absolute flex items-center gap-1">
                   <p
-                    className="rounded-full bg-white size-1 z-40 animate-bounce"
+                    className="rounded-full bg-white size-1 z-90 animate-bounce"
                     style={{ animationDelay: "0s" }}
                   ></p>
                   <p
-                    className="rounded-full bg-white size-1 z-40 animate-bounce"
+                    className="rounded-full bg-white size-1 z-90 animate-bounce"
                     style={{ animationDelay: "0.2s" }}
                   ></p>
                   <p
-                    className="rounded-full bg-white size-1 z-40 animate-bounce"
+                    className="rounded-full bg-white size-1 z-90 animate-bounce"
                     style={{ animationDelay: "0.4s" }}
                   ></p>
                 </div>
-                <img
-                  src="/Logo.png"
-                  alt="Textory"
-                  className="logo w-14 -z-40"
-                />
+                <img src="/Logo.png" alt="Textory" className="logo w-14 z-40" />
               </div>
               <h1 className="text-2xl font-bold mt-2">Welcome Back</h1>
               <p className="text-base-content/60">Sign in to your account</p>
