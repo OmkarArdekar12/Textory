@@ -45,7 +45,11 @@ const Navbar = () => {
                     }}
                   ></p>
                 </div>
-                <img src="/Logo.png" alt="Textory" className="w-14 -z-40" />
+                <img
+                  src="/Logo.png"
+                  alt="Textory"
+                  className="logo w-14 -z-40"
+                />
               </div>
               <h1 className="text-lg font-bold tracking-widest">TEXTORY</h1>
             </Link>

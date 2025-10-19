@@ -73,7 +73,11 @@ const SignUpPage = () => {
                     style={{ animationDelay: "0.4s" }}
                   ></p>
                 </div>
-                <img src="/Logo.png" alt="Textory" className="w-14 -z-40" />
+                <img
+                  src="/Logo.png"
+                  alt="Textory"
+                  className="logo w-14 -z-40"
+                />
               </div>
               <h1 className="text-2xl font-bold mt-2">Create Account</h1>
               <p className="text-base-content/60">
