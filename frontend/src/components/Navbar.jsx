@@ -21,24 +21,27 @@ const Navbar = () => {
                     className="rounded-full bg-white size-1 z-40 animate-bounce-small"
                     style={{
                       animationDelay: "0s",
-                      animationDuration: "1s",
+                      animationDuration: "2s",
                       animationIterationCount: "5",
+                      animationTimingFunction: "ease-in-out",
                     }}
                   ></p>
                   <p
                     className="rounded-full bg-white size-1 z-40 animate-bounce-medium"
                     style={{
-                      animationDelay: "0.1s",
-                      animationDuration: "1s",
+                      animationDelay: "0.2s",
+                      animationDuration: "2s",
                       animationIterationCount: "5",
+                      animationTimingFunction: "ease-in-out",
                     }}
                   ></p>
                   <p
                     className="rounded-full bg-white size-1 z-40 animate-bounce-large"
                     style={{
-                      animationDelay: "0.2s",
-                      animationDuration: "1s",
+                      animationDelay: "0.3s",
+                      animationDuration: "2s",
                       animationIterationCount: "5",
+                      animationTimingFunction: "ease-in-out",
                     }}
                   ></p>
                 </div>
