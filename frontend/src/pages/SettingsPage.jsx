@@ -4,9 +4,9 @@ import { useThemeStore } from "../store/useThemeStore";
 import { allThemes } from "../constants";
 
 const previewMessage = [
-  { idx: 1, content: "Hey! WhatsApp, what are you doing?", isSent: false },
+  { id: 1, content: "Hey! WhatsApp, what are you doing?", isSent: false },
   {
-    idx: 2,
+    id: 2,
     content: "Just chatting on Textory - a chat application.",
     isSent: true,
   },
