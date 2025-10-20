@@ -18,7 +18,7 @@ const FRONTEND_URL = process.env.FRONTEND_URL || "https://textory.vercel.app";
 
 app.use(
   cors({
-    origin: [FRONTEND_URL, "https://localhost:5173"],
+    origin: [FRONTEND_URL, "http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "PATCH"],
     credentials: true,
   })
