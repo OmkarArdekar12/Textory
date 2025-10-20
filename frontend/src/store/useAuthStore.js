@@ -20,7 +20,7 @@ export const useAuthStore = create((set, get) => ({
       set({ authUser: res.data });
       get().connectSocket();
     } catch (err) {
-      console.log("Error in CheckAuth:", err);
+      toast.success("Sign-up/Sign-in to access the Textory");
       set({ authUser: null });
     } finally {
       set({ isCheckingAuth: false });
@@ -35,7 +35,8 @@ export const useAuthStore = create((set, get) => ({
       toast.success("Account created successfully");
       get().connectSocket();
     } catch (error) {
-      toast.error(error.response.data.message);
+      // toast.error(error.response.data.message);
+      toast.error("Something went wrong! try again");
     } finally {
       set({ isSigningUp: false });
     }
@@ -49,7 +50,8 @@ export const useAuthStore = create((set, get) => ({
       toast.success("Logged in successfully");
       get().connectSocket();
     } catch (error) {
-      toast.error(error.response.data.message);
+      // toast.error(error.response.data.message);
+      toast.error("Something went wrong! try again");
     } finally {
       set({ isLoggingIn: false });
     }
@@ -62,7 +64,8 @@ export const useAuthStore = create((set, get) => ({
       toast.success("Logged out successfully");
       get().disconnectSocket();
     } catch (error) {
-      toast.error(error.response.data.message);
+      // toast.error(error.response.data.message);
+      toast.error("Something went wrong! try again");
     }
   },
 
@@ -73,7 +76,8 @@ export const useAuthStore = create((set, get) => ({
       set({ authUser: res.data });
       toast.success("Profile updated successfully");
     } catch (error) {
-      toast.error(error.response.data.message);
+      // toast.error(error.response.data.message);
+      toast.error("Failed to update profile! try later");
     } finally {
       set({ isUpdatingProfile: false });
     }

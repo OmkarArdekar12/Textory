@@ -2,7 +2,6 @@ import { create } from "zustand";
 import toast from "react-hot-toast";
 import { axiosInstance } from "../lib/axios";
 import { useAuthStore } from "./useAuthStore";
-import { Slash } from "lucide-react";
 
 export const useChatStore = create((set, get) => ({
   messages: [],
@@ -18,7 +17,8 @@ export const useChatStore = create((set, get) => ({
       const res = await axiosInstance.get("/messages/users");
       set({ users: res.data });
     } catch (error) {
-      toast.error(error.response.data.message);
+      // toast.error(error.response.data.message);
+      toast.error("Something went wrong! try again");
     } finally {
       set({ isUsersLoading: false });
     }
@@ -30,7 +30,8 @@ export const useChatStore = create((set, get) => ({
       const res = await axiosInstance.get(`/messages/${userId}`);
       set({ messages: res.data });
     } catch (error) {
-      toast.error(error.response.data.message);
+      // toast.error(error.response.data.message);
+      toast.error("Something went wrong! try again");
     } finally {
       set({ isMessagesLoading: false });
     }
@@ -46,7 +47,8 @@ export const useChatStore = create((set, get) => ({
       );
       set({ messages: [...messages, res.data] });
     } catch (error) {
-      toast.error(error.response.data.message);
+      // toast.error(error.response.data.message);
+      toast.error("Failed to send message! try again");
     } finally {
       set({ isMessageSendLoading: false });
     }
