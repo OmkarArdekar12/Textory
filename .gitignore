@@ -45,4 +45,5 @@ dist-ssr
 */.env
 */.gitignore
 
+# Sample/testing Data
 backend/src/seeds/
