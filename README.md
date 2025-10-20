@@ -2,11 +2,11 @@
 
 ---
 
-<h2><a href="https://textory.onrender.com" rel="noopener noreferrer" target="_blank">Textory - Stay Connect</a></h2>
+<h2><a href="https://textory.vercel.app/" rel="noopener noreferrer" target="_blank">Textory - Stay Connect</a></h2>
 
 ### Textory is a real-time chat application built with the MERN stack (MongoDB, Express.js, React, Node.js), integrated with Socket.IO for live messaging. The frontend uses React, Tailwind CSS and DaisyUI, with Zustand for state management. Users can create accounts, login, and chat in real time with other users. Additionally, Textory comes with 35 pre-integrated UI themes, allowing users to personalize their chat interface for a richer and more interactive experience.
 
-<h3><a href="https://textory.onrender.com" rel="noopener noreferrer" target="_blank">Live Link: https://textory.onrender.com</a></h3>
+<h3><a href="https://textory.vercel.app/" rel="noopener noreferrer" target="_blank">Live Link: https://textory.vercel.app</a></h3>
 
 ## Features
 
