@@ -4,6 +4,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "OmkarArdekar",
@@ -19,7 +20,8 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.2",
-    "socket.io": "^4.8.1"
+    "socket.io": "^4.8.1",
+    "textory": "file:.."
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
