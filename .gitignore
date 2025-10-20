@@ -45,4 +45,4 @@ dist-ssr
 */.env
 */.gitignore
 
-/seeds/*
+backend/src/seeds/
