@@ -35,7 +35,7 @@ export const signup = async (req, res) => {
       generateToken(newUser._id, res); //generate jwt token
       await newUser.save();
 
-      res.status(200).json({
+      return res.status(200).json({
         _id: newUser._id,
         fullName: newUser.fullName,
         email: newUser.email,
@@ -43,11 +43,11 @@ export const signup = async (req, res) => {
         createdAt: newUser.createdAt,
       });
     } else {
-      res.status(400).json({ message: "Invalid User Data" });
+      return res.status(400).json({ message: "Invalid User Data" });
     }
   } catch (err) {
     console.log("Error in Signup Controller: ", err);
-    res.status(500).json({ message: "Internal Server Error" });
+    return res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
@@ -67,7 +67,7 @@ export const login = async (req, res) => {
 
     generateToken(user._id, res);
 
-    res.status(200).json({
+    return res.status(200).json({
       _id: user._id,
       fullName: user.fullName,
       email: user.email,
@@ -76,17 +76,17 @@ export const login = async (req, res) => {
     });
   } catch (err) {
     console.log("Error in Login Controller: ", err);
-    res.status(500).json({ message: "Internal Server Error" });
+    return res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
 export const logout = (req, res) => {
   try {
     res.cookie("jwt", "", { maxAge: 0 });
-    res.status(200).json({ message: "Logged out successfully" });
+    return res.status(200).json({ message: "Logged out successfully" });
   } catch (err) {
     console.log("Error in Logout Controller: ", err);
-    res.status(500).json({ message: "Internal Server Error" });
+    return res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
@@ -112,18 +112,18 @@ export const updateProfile = async (req, res) => {
       { new: true }
     );
 
-    res.status(200).json(updatedUser);
+    return res.status(200).json(updatedUser);
   } catch (err) {
     console.log("Error in UpdateProfile Controller: ", err);
-    res.status(500).json({ message: "Internal Server Error" });
+    return res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
 export const checkAuth = (req, res) => {
   try {
-    res.status(200).json(req.user);
+    return res.status(200).json(req.user);
   } catch (err) {
     console.log("Error in CheckAuth Controller: ", err);
-    res.status(500).json({ message: "Internal Server Error" });
+    return res.status(500).json({ message: "Internal Server Error" });
   }
 };
