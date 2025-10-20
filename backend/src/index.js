@@ -18,7 +18,10 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
+    origin:
+      process.env.NODE_ENV === "production"
+        ? "https://textory.vercel.app"
+        : "http://localhost:5173",
     credentials: true,
   })
 );
