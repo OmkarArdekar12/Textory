@@ -45,9 +45,4 @@ dist-ssr
 */.env
 */.gitignore
 
-sampleData.js
-testing.js
-testingData.js
-*/sampleData.js
-*/testing.js
-*/testingData.js
+/seeds/*
