@@ -9,8 +9,7 @@ const FRONTEND_URL = process.env.FRONTEND_URL || "https://textory.vercel.app";
 
 const io = new Server(server, {
   cors: {
-    origin: FRONTEND_URL,
-    methods: ["GET", "POST", "PUT", "PATCH"],
+    origin: [FRONTEND_URL],
     credentials: true,
   },
 });
