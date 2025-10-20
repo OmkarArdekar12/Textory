@@ -29,6 +29,13 @@ app.use(cookieParser());
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
+app.use("*", (req, res) => {
+  return res.status(404).json({
+    success: false,
+    message: "Route - Not Found",
+  });
+});
+
 server.listen(PORT, () => {
   console.log("Server is running or PORT:", PORT);
   connectDB();
