@@ -29,7 +29,7 @@ app.use(cookieParser());
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
 
-app.use("*", (req, res) => {
+app.use("*all", (req, res) => {
   return res.status(404).json({
     success: false,
     message: "Route - Not Found",
