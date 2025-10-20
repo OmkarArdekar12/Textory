@@ -24,6 +24,7 @@ export const useAuthStore = create((set, get) => ({
       toast.success("Sign-up/Sign-in to access Textory", {
         id: "User not authenticated",
       });
+      localStorage.removeItem("token");
       set({ authUser: null });
     } finally {
       set({ isCheckingAuth: false });
