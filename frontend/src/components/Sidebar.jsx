@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Users } from "lucide-react";
-import { useChatStore } from "../store/useChatStore";
 import { useAuthStore } from "../store/useAuthStore";
+import { useChatStore } from "../store/useChatStore";
 import SidebarSkeleton from "./skeletons/SidebarSkeleton";
 
 const Sidebar = () => {
@@ -88,4 +88,5 @@ const Sidebar = () => {
     </aside>
   );
 };
+
 export default Sidebar;
