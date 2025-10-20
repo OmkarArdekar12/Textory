@@ -10,7 +10,6 @@ export const generateToken = (userId, res) => {
     httpOnly: true,
     sameSite: "none",
     secure: process.env.NODE_ENV === "production",
-    path: "/",
   });
 
   return token;
