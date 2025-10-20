@@ -3,7 +3,7 @@ import { axiosInstance } from "../lib/axios";
 import toast from "react-hot-toast";
 import { io } from "socket.io-client";
 
-const BASE_URL = "https://textory-7jm8.vercel.app";
+const BASE_URL = "https://textory-1.onrender.com";
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,

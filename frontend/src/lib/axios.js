@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://textory-7jm8.vercel.app";
+const BASE_URL = "https://textory-1.onrender.com";
 
 export const axiosInstance = axios.create({
   baseURL: `${BASE_URL}/api`,
