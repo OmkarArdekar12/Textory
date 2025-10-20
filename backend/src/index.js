@@ -13,8 +13,9 @@ import { app, server, io } from "./lib/socket.js";
 dotenv.config();
 
 const PORT = process.env.PORT || 5001;
-
 const FRONTEND_URL = process.env.FRONTEND_URL || "https://textory.vercel.app";
+
+app.set("trust proxy", 1);
 
 app.use(
   cors({
