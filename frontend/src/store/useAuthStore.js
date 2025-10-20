@@ -21,7 +21,8 @@ export const useAuthStore = create((set, get) => ({
       set({ authUser: res.data });
       get().connectSocket();
     } catch (err) {
-      toast.success("Sign-up/Sign-in to access the Textory", {
+      toast.dismiss();
+      toast.success("Sign-up/Sign-in to access Textory", {
         id: "User not authenticated",
       });
       set({ authUser: null });
