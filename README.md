@@ -6,6 +6,8 @@
 
 ### Textory is a real-time chat application built with the MERN stack (MongoDB, Express.js, React, Node.js), integrated with Socket.IO for live messaging. The frontend uses Tailwind CSS and DaisyUI, with Zustand for state management. Users can create accounts, login, and chat in real time with other users.
 
+<h3><a href="https://textory.onrender.com" target="_blank">Live Link: https://textory.onrender.com</a></h3>
+
 ## Features
 
 - Real-time chat using Socket.IO
