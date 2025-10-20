@@ -85,7 +85,7 @@ const LoginPage = () => {
                 />
                 <button
                   type="button"
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center"
+                  className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer"
                   onClick={() => setShowPassword(!showPassword)}
                 >
                   {showPassword ? (

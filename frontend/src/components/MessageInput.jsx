@@ -63,8 +63,7 @@ const MessageInput = () => {
             />
             <button
               onClick={removeImage}
-              className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-base-300
-              flex items-center justify-center"
+              className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-base-300 flex items-center justify-center cursor-pointer"
               type="button"
             >
               <X className="size-3" />
@@ -101,7 +100,11 @@ const MessageInput = () => {
         </div>
         <button
           type="submit"
-          className="btn btn-sm btn-circle text-primary"
+          className={`btn btn-sm btn-circle text-primary ${
+            isMessageSendLoading || (!text.trim() && !imagePreview)
+              ? "cursor-not-allowed opacity-70"
+              : "!cursor-pointer"
+          }`}
           disabled={(!text.trim() && !imagePreview) || isMessageSendLoading}
         >
           <Send size={22} />
