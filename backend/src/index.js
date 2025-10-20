@@ -14,9 +14,12 @@ dotenv.config();
 
 const PORT = process.env.PORT || 5001;
 
+const FRONTEND_URL = process.env.FRONTEND_URL || "https://textory.vercel.app";
+
 app.use(
   cors({
-    origin: ["http://localhost:5173", process.env.FRONTEND_URL],
+    origin: FRONTEND_URL,
+    methods: ["GET", "POST", "PUT", "PATCH"],
     credentials: true,
   })
 );
