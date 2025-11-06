@@ -15,12 +15,10 @@ dotenv.config();
 const PORT = process.env.PORT || 5001;
 const FRONTEND_URL = process.env.FRONTEND_URL;
 
-app.set("trust proxy", 1);
-
 app.use(
   cors({
     origin: [FRONTEND_URL],
-    methods: ["GET", "POST", "PUT", "PATCH"],
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
