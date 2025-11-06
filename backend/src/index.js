@@ -37,6 +37,6 @@ app.use("*all", (req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log("Server is running or PORT:", PORT);
+  console.log("Server is running on PORT:", PORT);
   connectDB();
 });
