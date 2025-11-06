@@ -6,6 +6,7 @@ const app = express();
 const server = http.createServer(app);
 
 const FRONTEND_URL = process.env.FRONTEND_URL;
+const userSocketMap = {}; //online users - {userId(key):socket.id(value)}
 
 const io = new Server(server, {
   cors: {
@@ -18,8 +19,6 @@ const io = new Server(server, {
 export function getRecieverSocketId(userId) {
   return userSocketMap[userId];
 }
-
-const userSocketMap = {}; //online users - {userId(key):socket.id(value)}
 
 io.on("connection", (socket) => {
   //console.log("A user connected", socket.id);
