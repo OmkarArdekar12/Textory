@@ -5,11 +5,11 @@ import express from "express";
 const app = express();
 const server = http.createServer(app);
 
-const FRONTEND_URL = process.env.FRONTEND_URL || "https://textory.vercel.app";
+const FRONTEND_URL = process.env.FRONTEND_URL;
 
 const io = new Server(server, {
   cors: {
-    origin: [FRONTEND_URL, "http://localhost:5173"],
+    origin: [FRONTEND_URL],
     credentials: true,
   },
 });
