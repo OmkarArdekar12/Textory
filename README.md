@@ -110,6 +110,7 @@ NODE_ENV=development or production in deployment (optional)
 VITE_BACKEND_URL=http://localhost:5001 or your_backend_url
 ```
 
+<br>
 <hr>
 <br>
 
