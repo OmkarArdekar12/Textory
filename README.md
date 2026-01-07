@@ -13,7 +13,7 @@
 <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/>
 </div>
 
-<h2>Textory - Stay Connect</h2>
+<h2>Textory - Stay Connected</h2>
 
 ### Textory is a real-time chat application built using the MERN Stack (MongoDB, Express.js, React, Node.js) and powered by Socket.IO for live two-way communication. <br>It allows users to create accounts, log in securely, and chat instantly with others in real time. <br>The frontend is developed with React, styled using Tailwind CSS and DaisyUI, while Zustand efficiently manages global state. <br>Users can also customize their chat interface with 35 pre-integrated UI themes, enhancing personalization and user engagement. <br>Cloudinary is integrated for image storage, and JWT authentication ensures secure communication between client and server. <br>Textory offers a modern, fast, and responsive experience for staying connected anytime, anywhere.
 
